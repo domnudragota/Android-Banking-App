@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <!-- Card Number -->
+    <TextView
+        android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <!-- Card Holder Name -->
+    <TextView
+        android:id="@+id/card_holder_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card Holder Name"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <!-- Expiry Date -->
+    <TextView
+        android:id="@+id/expiry_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expiry Date"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <!-- Balance -->
+    <TextView
+        android:id="@+id/card_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <!-- IBAN -->
+    <TextView
+        android:id="@+id/card_iban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IBAN: "
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

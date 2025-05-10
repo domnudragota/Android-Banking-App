@@ -1,0 +1,12 @@
+# Android/Gradle
+.gradle/
+/build/
+**/build/
+.idea/
+*.iml
+
+# Firebase config
+/app/google-services.json
+
+# Local secrets
+local.properties

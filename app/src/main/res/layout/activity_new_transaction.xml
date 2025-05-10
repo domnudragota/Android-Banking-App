@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Name Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipient Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/transaction_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter recipient's name"
+            android:inputType="text" />
+
+        <!-- IBAN Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IBAN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/transaction_iban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter IBAN"
+            android:inputType="text" />
+
+        <!-- Amount Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/transaction_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount"
+            android:inputType="numberDecimal" />
+
+        <!-- Custom Message Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Message"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/transaction_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a custom message"
+            android:inputType="textMultiLine" />
+
+        <!-- Transaction Time Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Time"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/transaction_time_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/time_asap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As Soon As Possible"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/time_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedule a Time" />
+        </RadioGroup>
+
+        <!-- Calendar -->
+        <CalendarView
+            android:id="@+id/transaction_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="8dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_transaction_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Transaction"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
